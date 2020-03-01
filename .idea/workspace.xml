@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d55169e4-d963-42ea-8aa9-ccb88cceacaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Pandas/PandasExcel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pandas/ProvinceFruit_1999_2018.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matplotlib/MatImage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Matplotlib/MatImage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +21,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="54f198e5-346c-4b2d-b90a-eab571cbb798" />
-  </component>
   <component name="ProjectId" id="1YFK945NjGlPcTlN7eSKFTK0zDS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -32,15 +30,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Matplotlib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Pandas" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyLearn\Pandas" />
       <recent name="D:\GitHub\PyLearn\Matplotlib" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MatImage">
+  <component name="RunManager" selected="Python.PandasExcel">
     <configuration name="MatImage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NumpyLearn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="PandasExcel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,11 +90,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Numpy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pandas" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Numpy/NumpyLearn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pandas/PandasExcel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PandasExcel" />
         <item itemvalue="Python.MatImage" />
         <item itemvalue="Python.PandasLearn" />
         <item itemvalue="Python.MatplotlibLearn" />
         <item itemvalue="Python.ScipyLearn" />
-        <item itemvalue="Python.NumpyLearn" />
       </list>
     </recent_temporary>
   </component>
@@ -167,9 +166,25 @@
       <option name="presentableId" value="Default" />
       <updated>1582532747275</updated>
     </task>
+    <task id="LOCAL-00001" summary="增加多图显示代码">
+      <created>1583033231229</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583033231229</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加多图显示代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加多图显示代码" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1583033230448">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583033230448" />
     <state x="800" y="66" width="440" height="479" key="FileChooserDialogImpl" timestamp="1582685569325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -178,30 +193,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" width="274" height="281" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582639766211" />
-    <state width="1345" height="151" key="GridCell.Tab.0.bottom" timestamp="1583033004443">
+    <state width="1345" height="186" key="GridCell.Tab.0.bottom" timestamp="1583056588996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="151" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583033004443" />
-    <state width="1345" height="151" key="GridCell.Tab.0.center" timestamp="1583033004443">
+    <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583056588996" />
+    <state width="1345" height="186" key="GridCell.Tab.0.center" timestamp="1583056588996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="151" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583033004443" />
-    <state width="1345" height="151" key="GridCell.Tab.0.left" timestamp="1583033004443">
+    <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583056588996" />
+    <state width="1345" height="186" key="GridCell.Tab.0.left" timestamp="1583056588996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="151" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583033004443" />
-    <state width="1345" height="151" key="GridCell.Tab.0.right" timestamp="1583033004443">
+    <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583056588996" />
+    <state width="1345" height="186" key="GridCell.Tab.0.right" timestamp="1583056588996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="151" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583033004443" />
+    <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583056588996" />
     <state x="237" y="5" key="SettingsEditor" timestamp="1582718220576">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="237" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582718220576" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1582787836018">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583033295629">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582787836018" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583033295629" />
     <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1582808777982">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
