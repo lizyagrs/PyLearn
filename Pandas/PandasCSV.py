@@ -2,7 +2,9 @@
 import numpy as np
 import pandas as pd
 
-filename='Meteo_Wuhan.csv' #"Meteo_Wuhan.csv"
+# filename='Meteo_Wuhan.xlsx'
+# df=pd.read_excel(filename)
+filename="Meteo_Wuhan.csv"
 
 df=pd.read_csv(filename)
 
