@@ -6,10 +6,13 @@ import pandas as pd
 def readExcelbyFileName(filename):
     #这个会直接默认读取到这个Excel的第一个表单
     df=pd.read_excel(filename)
-    data=df.head()#默认读取前5行的数据
+    data=df.values
     print("获取到所有的值:\n{0}".format(data))#格式化输出
+    #默认读取前5行的数据
+    data1=df.head()
+    print("获取到前5行的值:\n{0}".format(data1))#格式化输出
     #读取第1行到第4行，第1列到第22列的值，包括表头
-    data=df.iloc[0:3,:]
+    data=df.iloc[0:31,:]
     print("读取指定行的数据：\n{0}".format(data))#格式化输出
     return data
 
@@ -28,7 +31,9 @@ filename='ProvinceFruit_1999_2018.xlsx'
 data=readExcelbyFileName(filename)
 print('--------------计算df计算所有行的平均值--------------')
 allrowmean=data.mean(axis = 1)# 计算所有行的平均值
-print(allrowmean)
+print("获取所有行的平均值:\n{0}".format(allrowmean))
+allcolomn_mean=data.mean(axis = 0)# 计算所有行的平均值
+print("获取所有列的平均值:\n{0}".format(allcolomn_mean))
 
 #sheet名称
 sheetname = '分省年度数据'

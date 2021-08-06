@@ -17,11 +17,10 @@ print('--------------计算df计算所有行的平均值--------------')
 allrowmean=df.mean(axis = 1)# 计算所有行的平均值
 print(allrowmean)
 
-print('--------------计算df第三列的平均值--------------')
-all3mean=df.iloc[:, 2].mean() # 计算第三列的平均值
-print(all3mean)
-
 print('--------------计算df计算所有列的平均值--------------')
 allcolummean=df.mean(axis = 0)# 计算所有列的平均值
 print(allcolummean)
 
+print('--------------计算df第三列的平均值--------------')
+all3mean=df.iloc[:, 2].mean() # 计算第三列的平均值
+print(all3mean)
