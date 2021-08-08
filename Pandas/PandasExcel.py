@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 import pandas as pd
-
+import matplotlib.pyplot as plt
 #方法一：默认读取第一个表单
 def readExcelbyFileName(filename):
     #这个会直接默认读取到这个Excel的第一个表单
-    df=pd.read_excel(filename)
+    df=pd.read_excel(filename, index_col=0, parse_dates=True)
+    # fig = plt.figure()
+    df.plot()
+    plt.show()
     data=df.values
     print("获取到所有的值:\n{0}".format(data))#格式化输出
     #默认读取前5行的数据
@@ -27,12 +30,13 @@ def readExcelbyFileNameAndSheetName(filename,sheetname):
 
 #测试
 filename='ProvinceFruit_1999_2018.xlsx'
+filename='Meteo_Wuhan.xlsx'
 #方法一调用
 data=readExcelbyFileName(filename)
 print('--------------计算df计算所有行的平均值--------------')
 allrowmean=data.mean(axis = 1)# 计算所有行的平均值
 print("获取所有行的平均值:\n{0}".format(allrowmean))
-allcolomn_mean=data.mean(axis = 0)# 计算所有行的平均值
+allcolomn_mean=data.mean(axis = 0)# 计算所有列的平均值
 print("获取所有列的平均值:\n{0}".format(allcolomn_mean))
 
 #sheet名称

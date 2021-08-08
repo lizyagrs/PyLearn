@@ -1,82 +1,108 @@
-'''
-scipy.optimize.leatsq():使用最小二乘法拟合直线
-'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 
-# #定义拟合函数形式
-# def func(p,x):
-#     k,b = p
-#     return k*x+b
-#
-# #定义误差函数
-# def error(p,x,y,s):
-#     print(s)
-#     return func(p,x)-y
+# 中文字体
+plt.rcParams['font.family'] = ['sans-serif']
+plt.rcParams['font.sans-serif'] = ['SimHei']
 
-#最小二乘拟合函数、制图
-# def TestLeastsq(p,Xi,Yi):
-#     #使用leastsq()函数进行参数估计
-#     s = '参数估计次数'
-#     Para = leastsq(error,p,args=(Xi,Yi,s))
-#     #系数与常数项求解
-#     k,b = Para[0]
-#     #结果输出
-#     print('k=',k,'\n','b=',b)
-#     #图形可视化
-#     plt.figure(figsize = (8,6))
-#     #绘制训练数据的散点图
-#     plt.scatter(Xi,Yi,color='r',label='Sample Point',linewidths = 3)
-#     #X坐标
-#     plt.xlabel('x')
-#     #y坐标
-#     plt.ylabel('y')
-#     x = np.linspace(0,2000,1000)
-#     #函数
-#     y = k*x+b
-#     #制图
-#     plt.plot(x,y,color= 'orange',label = 'Fitting Line',linewidth = 2)
-#     #图例
-#     plt.legend()
-#     #展示图表
-#     plt.show()
+#线状图
+def lineXY():
+    x = np.arange(1,10)
+    y =  2 * x
+    plt.title("Plot XY")
+    plt.xlabel("x axis")
+    plt.ylabel("y axis")
+    plt.plot(x,y)
+    plt.show()
+
+# 散点图
+def lineXY_CN():
+    x = np.arange(1,10)
+    y =  2 * x
+    plt.title("散点图")
+    plt.xlabel("x 轴")
+    plt.ylabel("y 轴")
+    plt.plot(x,y,'o')
+    plt.show()
+
+# 柱状图
+def BarGragh():
+    x =  [1,4,7]
+    y =  [2,5,8]
+    x2 =  [3,6,9]
+    y2 =  [8,7,4]
+    plt.bar(x, y, align =  'center')
+    plt.bar(x2, y2, color =  'r', align =  'center')
+    plt.title('柱状图')
+    plt.ylabel('Y 坐标')
+    plt.xlabel('X 坐标')
+    plt.show()
+
+# 多图并列
+def TwoSubPlotGragh():
+
+    fig = plt.figure(figsize=(10, 8), dpi=100)
+    x1 = np.arange(1,10)
+    y1 =  2 * x1
+    plt.subplot(2,  1,  1)
+    # 绘制第一个图像
+    plt.plot(x1, y1)
+    # plt.title('Line')
+    plt.xlabel("x axis")
+    plt.ylabel("y axis")
+
+    x2 = np.arange(1,10)
+    y2 =  2 * x2
+    plt.subplot(2,  1,  2)
+    # plt.title("散点图")
+    plt.xlabel("x 轴")
+    plt.ylabel("y 轴")
+    plt.plot(x2,y2,'o')
+    plt.show()
+
+# 多图并列
+def FourSubPlotGragh():
+
+    fig = plt.figure(figsize=(10, 8), dpi=100)
+    x1 = np.arange(1,10)
+    y1 =  2 * x1
+    plt.subplot(2,  2,  1)
+    # 绘制第一个图像
+    plt.plot(x1, y1)
+    # plt.title('Line')
+    plt.xlabel("x axis")
+    plt.ylabel("y axis")
+
+    x2 = np.arange(1,10)
+    y2 =  2 * x2
+    plt.subplot(2,  2,  2)
+    # plt.title("散点图")
+    plt.xlabel("x 轴")
+    plt.ylabel("y 轴")
+    plt.plot(x2,y2,'o')
+
+    x3 = np.arange(1,10)
+    y3 =  x3
+    plt.subplot(2,  2,  3)
+    # plt.title("散点图")
+    plt.xlabel("x 轴")
+    plt.ylabel("y 轴")
+    plt.plot(x3,y3,'o')
+
+    x4 = np.arange(1,10)
+    y4 =  x4
+    plt.subplot(2,  2,  4)
+    # plt.title("散点图")
+    plt.xlabel("x 轴")
+    plt.ylabel("y 轴")
+    plt.plot(x4,y4)
+    plt.show()
 
 #-----------------以下为函数测试的数据和调用部分--------------------------
 
-#两组训练数据
-
-# Xi = np.array([1400.5256,23.46947992,18.765234,0.3400712,1162.1815,2.160179832,573.86017,7.86524803,96.691,6.909166922,0.93668854])
-# Yi = np.array([1450.4054,5.789398075,21.995316,0.153889867,1174.8822,2.71192977,700.67657,7.167389955,100,0.047114187,0.9755041])
-#随机给出参数的初始值
-# p = [8,3]
-#
-# #函数调用
-# TestLeastsq(p,Xi,Yi)
-
-fig1, ax = plt.subplots()
-
-ax.set_xlim(300, 400)
-ax.set_box_aspect(1)
-
-plt.show()
-
-fig2, (ax, ax2) = plt.subplots(ncols=2, sharey=True)
-
-ax.plot([1, 5], [0, 10])
-ax2.plot([100, 500], [10, 15])
-
-ax.set_box_aspect(1)
-ax2.set_box_aspect(1)
-
-plt.show()
-
-fig3, ax = plt.subplots()
-
-ax2 = ax.twinx()
-
-ax.plot([0, 10])
-ax2.plot([12, 10])
-
-ax.set_box_aspect(1)
-
-plt.show()
+lineXY()
+lineXY_CN()
+BarGragh()
+TwoSubPlotGragh()
+FourSubPlotGragh()
