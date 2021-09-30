@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.family'] = ['sans-serif']
 plt.rcParams['font.sans-serif'] = ['SimHei']
 
+#用来显示负号
+plt.rcParams['axes.unicode_minus']=False
+
 #线状图
 def lineXY():
     x = np.arange(1,10)
@@ -17,13 +20,13 @@ def lineXY():
     plt.show()
 
 # 散点图
-def lineXY_CN():
-    x = np.arange(1,10)
-    y =  2 * x
+def ScatterXY():
+    x = np.random.randn(1000)
+    y = np.random.randn(1000)
     plt.title("散点图")
     plt.xlabel("x 轴")
     plt.ylabel("y 轴")
-    plt.plot(x,y,'o')
+    plt.scatter(x, y, c='b')
     plt.show()
 
 # 柱状图
@@ -102,7 +105,7 @@ def FourSubPlotGragh():
 #-----------------以下为函数测试的数据和调用部分--------------------------
 
 lineXY()
-lineXY_CN()
+ScatterXY()
 BarGragh()
 TwoSubPlotGragh()
 FourSubPlotGragh()
